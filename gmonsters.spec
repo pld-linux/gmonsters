@@ -1,4 +1,5 @@
 Summary:	A little monster breeding for Gnome
+Summary(pl):	Hodowanie potworów dla GNOME
 Name:		gmonsters
 Version:	0.3.0
 Release:	1
@@ -22,27 +23,50 @@ many different attacks; the ability to capture, train, and raise
 monsters; and more features are to come. It is fairly incomplete right
 now but it is stable and won't (easily) crash. Have fun!
 
+%description -l pl
+GMonsters to gra w tresowanie potworów podobna pod niektórymi
+wzglêdami do Monster Rancher z Playstation. Ma wiele gatunków; wiele
+ró¿nych rodzajów ataków; mo¿liwo¶æ ³apania, tresowania, hodowli
+potworów; wiele innych w przysz³o¶ci. Jest jeszcze nie dokoñczona, ale
+stabilna. Mi³ej zabawy.
+
 %package devel
 Summary:	Development files for libgmonsters
+Summary(pl):	Pliki dla programisty libgmonsters
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name} = %{version}
 
 %description devel
 Files needed to develop libgmonsters-based games.
 
+%description devel -l pl
+Pliki potrzebne do rozwijania gier bazuj±cych na libgmonsters.
+
 %package static
 Summary:	Static libgmonsters
+Summary(pl):	Statyczna wersja libgmonsters
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name}-devel = %{version}
 
 %description static
 Static libgmonsters.
+
+%description static -l pl
+Statyczna wersja biblioteki libgmonsters.
 
 %prep
 %setup -q
@@ -58,11 +82,11 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	GMdir=%{_applnkdir}/Games/GMonsters
 
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post   -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
