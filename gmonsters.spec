@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://download.sourceforge.net/gmonsters/%{name}-%{version}.tar.bz2
+# Source0-md5:	0dd20019a37b8ef1431a5083e05ab5db
 Patch0:		%{name}-desktop.patch
 URL:		http://gmonsters.sourceforge.net/
 BuildRequires:	gnome-libs-devel
