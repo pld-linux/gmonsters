@@ -14,8 +14,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	%{name}-devel
 Obsoletes:	%{name}-static
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 %define		_datadir	%{_prefix}/share
 
 %description
