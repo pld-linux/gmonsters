@@ -15,8 +15,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	%{name}-devel
 Obsoletes:	%{name}-static
 
-%define		_datadir	%{_prefix}/share
-
 %description
 GMonsters is a monster training game similar in some aspects to the
 Monster Rancher game on Playstation. It features numerous species;
@@ -47,17 +45,18 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	gnomemenudir=%{_applnkdir}/Games/Strategy
 
+%find_lang %{name} --with-gnome
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/gmonsters
-%{_datadir}/gnome/help/gmonsters
 %{_datadir}/gmonsters
 %{_pixmapsdir}/*.png
 %{_applnkdir}/Games/Strategy/*
