@@ -5,8 +5,6 @@ Version:	0.3.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://download.sourceforge.net/gmonsters/%{name}-%{version}.tar.bz2
 URL:		http://gmonsters.sourceforge.net/
 BuildRequires:	gnome-libs-devel
@@ -34,13 +32,6 @@ stabilna. MiЁej zabawy.
 Summary:	Development files for libgmonsters
 Summary(pl):	Pliki dla programisty libgmonsters
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -53,13 +44,6 @@ Pliki potrzebne do rozwijania gier bazuj╠cych na libgmonsters.
 Summary:	Static libgmonsters
 Summary(pl):	Statyczna wersja libgmonsters
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
