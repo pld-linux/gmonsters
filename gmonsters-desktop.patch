@@ -1,0 +1,13 @@
+--- gmonsters-0.4.0/gmonsters.desktop.in~	Sat Dec 21 20:54:42 2002
++++ gmonsters-0.4.0/gmonsters.desktop.in	Sat Dec 21 20:54:42 2002
+@@ -1,9 +1,8 @@
+-
+ [Desktop Entry]
+ Name=Gmonsters
+ Comment=No comment
+ Exec=gmonsters
+-Icon=@PACKAGE_PIXMAPS_DIR@/gmonsters.png
++Icon=gmonsters.png
+ Terminal=false
+ MultipleArgs=false
+ Type=Application
