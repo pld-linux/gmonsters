@@ -2,10 +2,11 @@ Summary:	A little monster breeding for Gnome
 Summary(pl):	Hodowanie potworów dla GNOME
 Name:		gmonsters
 Version:	0.4.0
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://download.sourceforge.net/gmonsters/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-desktop.patch
 URL:		http://gmonsters.sourceforge.net/
 BuildRequires:	gnome-libs-devel
 BuildRequires:	imlib-devel
@@ -33,9 +34,11 @@ stabilna. Mi³ej zabawy.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure2_13
+sed 's:@prefix@:%{_prefix}:g' < src/filedirs.h.in > src/filedirs.h
 %{__make}
 
 %install
