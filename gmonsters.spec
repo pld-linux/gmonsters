@@ -1,4 +1,4 @@
-Summary:	A little monster breeding for Gnome
+Summary:	A little monster breeding for GNOME
 Summary(pl):	Hodowanie potworów dla GNOME
 Name:		gmonsters
 Version:	0.4.0
