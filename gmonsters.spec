@@ -2,7 +2,7 @@ Summary:	A little monster breeding for Gnome
 Summary(pl):	Hodowanie potworów dla GNOME
 Name:		gmonsters
 Version:	0.3.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://download.sourceforge.net/gmonsters/%{name}-%{version}.tar.bz2
