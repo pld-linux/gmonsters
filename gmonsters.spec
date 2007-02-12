@@ -1,5 +1,5 @@
 Summary:	A little monster breeding for GNOME
-Summary(pl):	Hodowanie potwor體 dla GNOME
+Summary(pl.UTF-8):   Hodowanie potwor贸w dla GNOME
 Name:		gmonsters
 Version:	0.4.0
 Release:	1
@@ -22,12 +22,12 @@ many different attacks; the ability to capture, train, and raise
 monsters; and more features are to come. It is fairly incomplete right
 now but it is stable and won't (easily) crash. Have fun!
 
-%description -l pl
-GMonsters to gra w tresowanie potwor體 podobna pod niekt髍ymi
-wzgl阣ami do Monster Rancher z Playstation. Ma wiele gatunk體; wiele
-r罂nych rodzaj體 atak體; mo縧iwo舵 砤pania, tresowania, hodowli
-potwor體; wiele innych w przysz硂禼i. Jest jeszcze nie doko馽zona, ale
-stabilna. Mi砮j zabawy.
+%description -l pl.UTF-8
+GMonsters to gra w tresowanie potwor贸w podobna pod niekt贸rymi
+wzgl臋dami do Monster Rancher z Playstation. Ma wiele gatunk贸w; wiele
+r贸偶nych rodzaj贸w atak贸w; mo偶liwo艣膰 艂apania, tresowania, hodowli
+potwor贸w; wiele innych w przysz艂o艣ci. Jest jeszcze nie doko艅czona, ale
+stabilna. Mi艂ej zabawy.
 
 %prep
 %setup -q
