@@ -43,7 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	gnomemenudir=%{_applnkdir}/Games/Strategy
+	gnomemenudir=%{_desktopdir}
+
+rm -rf $RPM_BUILD_ROOT/usr/doc/gmonsters
 
 %find_lang %{name} --with-gnome
 
@@ -59,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/gmonsters
 %{_datadir}/gmonsters
 %{_pixmapsdir}/*.png
-%{_applnkdir}/Games/Strategy/*
+%{_desktopdir}/*.desktop
